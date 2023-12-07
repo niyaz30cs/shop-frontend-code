@@ -14,9 +14,6 @@ function LaptopP() {
       });
   });
 
-  // const addToCart = (post) => {
-  //   dispatch(add(post));
-  // };
   return (
     <div>
       <div className="oHome">

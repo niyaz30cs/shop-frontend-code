@@ -18,7 +18,7 @@ function Footer() {
               </div>
               <div className="phone">
                 <MdSmartphone className="phoneSize" />
-                <p>+91 9097372786</p>
+                <p>+919097372786</p>
               </div>
               <div className="phone">
                 <FaLocationArrow className="phoneSize" />
@@ -27,17 +27,17 @@ function Footer() {
             </div>
             <div className="sb__footer-link_div">
               <h2>Services</h2>
-              <Link to="/king"><p>Identity Verification</p></Link>
-              <Link to="/king"><p>Address Verification</p></Link>
-              <Link to="/king"><p>Employee Verification</p></Link>
-              <Link to="/king"><p>Education Verification</p></Link>
+              <Link to="/"><p>Identity Verification</p></Link>
+              <Link to="/"><p>Address Verification</p></Link>
+              <Link to="/"><p>Employee Verification</p></Link>
+              <Link to="/"><p>Education Verification</p></Link>
             </div>
             <div className="sb__footer-link_div">
               <h2>Resources</h2>
-              <Link to="/king"><p>Blog</p></Link>
-              <Link to="/king"><p>Help Center</p></Link>
-              <Link to="/king"><p>Careers</p></Link>
-              <Link to="/king"><p>Contact Us</p></Link>
+              <Link to="/"><p>Blog</p></Link>
+              <Link to="/"><p>Help Center</p></Link>
+              <Link to="/"><p>Careers</p></Link>
+              <Link to="/"><p>Contact Us</p></Link>
             </div>
             <div className="sb__footer-link_div">
               <h2>Sites</h2>
@@ -66,10 +66,10 @@ function Footer() {
               </p>
             </div>
             <div className="sb__footer-below-links">
-              <Link to="/king"><div><p>Term & condition</p></div></Link>
-              <Link to="/king"><div><p>Privacy</p></div></Link>
-              <Link to="/king"><div><p>Security</p></div></Link>
-              <Link to="/king"><div><p>Cookies Declaration</p></div></Link>
+              <Link to="/"><div><p>Term & condition</p></div></Link>
+              <Link to="/"><div><p>Privacy</p></div></Link>
+              <Link to="/"><div><p>Security</p></div></Link>
+              <Link to="/"><div><p>Cookies Declaration</p></div></Link>
             </div>
           </div>
         </div>
