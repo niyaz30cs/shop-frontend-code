@@ -1,0 +1,435 @@
+.star
+{
+    color: yellow;
+    text-shadow: 3px 2px 1px black;
+    margin-bottom: 5px;
+}
+.MainHome
+ {
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+
+.HomePage {
+    display: flex;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.head{
+    position: relative;
+    bottom: 20px;
+}
+#head{
+    color: blue;
+}
+
+.HomeBox {
+    height: 300px;
+    width: 250px;
+    padding: 0px auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid purple;
+}
+
+.imgs {
+    height: 100px;
+    width: 100px;
+}
+
+.myHome {
+    position: relative;
+    top: 10px;
+}
+
+.HomeData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    width: 80vw;
+    font-family: 'Tinos', serif;
+    gap: 1.5rem;
+}
+.omeData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    width: 60vw;
+    font-family: 'Tinos', serif;
+    gap: 1.5rem;
+}
+
+.RomeBox 
+{
+    width: 250px;
+    height: 330px;
+    border-radius: 12px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-sizing: border-box;
+}
+
+.RemidCard {
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.itsPrice {
+    color: #F44336;
+    font-size: 21px;
+}
+
+.notPrice {
+    color: dimgray;
+    text-decoration: line-through;
+}
+
+
+.homeimg {
+    height: 130px;
+    width: 150px;
+}
+
+.homeimg:hover {
+    transform: rotateY(180deg);
+}
+
+.homeText {
+    font-size: 1.3rem;
+    color: blue;
+}
+
+.addToCart {
+    position: relative;
+    align-items: center;
+    width: 100px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    top: 30px;
+    padding: 3px ;
+}
+.addToCart:hover
+{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.OfferSection
+{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 23vh;
+    gap: 1rem;
+    margin-left: 40px;
+}
+.offers{
+    color: navy;
+}
+.offCard
+{
+    width: 32vw;
+    height: 22vh;
+    padding: 5px;
+    border: 1px solid midnightblue;
+    border-radius: 12px;
+}
+.offCard:hover
+{
+    background-color: rgb(246, 246, 181);
+}
+.offCard h5{
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 15px;
+}
+.offCard p{
+    font-size: 1rem;
+    color: black;
+    font-weight: 550;
+}
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-around;
+    width: 40vw;
+   
+
+}
+.productimg
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.productimg p{
+    width: 5vw;
+    font-size: 1rem;
+}
+
+.pimg{
+    height: 7vh;
+    width: 5vw;
+}
+
+.cometoHome{
+    gap: 1.5rem;
+    position: relative;
+    top: 20px;
+    right: 0px;
+    cursor: pointer;
+    background-color: blue;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+.cometoHome:hover
+{
+    background-color: yellow;
+    color: black;
+}
+.myButtons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 0.8rem;
+}
+
+.decrp {
+    font-family: 'Tinos', serif;
+    color:black;
+    position: relative;
+    top: 10px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.title{
+    font-family: 'Tinos', serif;
+    color: blue;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.CartBtn {
+    height: 35px;
+    background-color: rgb(54, 54, 233);
+    color: lemonchiffon;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: none;
+    font-weight: bold;
+}
+.input
+{
+    width: 300px;
+    height: 35px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.input:focus
+{
+    background-color: aquamarine;
+}
+.footermy{
+    position: relative;
+    top: 20px;
+
+}
+.ClickPage{
+    display: grid;
+    grid-template-columns: repeat(8, 2fr);
+    gap: 1rem;
+}
+.clickImage{
+   grid-column: 1 / span 4;
+   grid-row: 1/ span 4;
+   gap: 1rem;
+}
+.midContents{
+    grid-column: 5/span 8;
+    grid-row: 1/span 5;
+}
+.MinClick{
+    width: 90vw;
+    height: 100vh;
+}
+
+.d-flex {
+    position: relative;
+    left: 64px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#submitbtn {
+    height: 2vh;
+    position: relative;
+    top: 4px;
+    width: 5vw;
+    color: lemonchiffon;
+    border-radius: 13px;
+    z-index: 3;
+}
+.topsearch{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.SearchName{
+    position: relative;
+    top: -1.2vh;
+}
+.counting{
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 700px) {
+    .ClickPage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title{
+        width: 80vw;
+        position: relative;
+        right: 10px;
+    }
+    .clickImage img{
+        width: 80vw;
+        height: 40vh;
+    }
+    .OfferSection{
+        display: none;
+        width: 95vw;
+    }
+    .paa{
+        width: 40vw;
+        font-size: 5px;
+    }
+    .product{
+        width: 85vw;
+    }
+    .productimg p{
+        /* display: none; */
+        position: relative;
+        left: 20px;
+    }
+    .pimg{
+        width: 23vw;
+    }
+    .decrp{
+        width: 88vw;
+    }
+
+    .d-flex {
+        position: relative;
+        top: 14px;
+        left: 30px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .input {
+        padding: 1px;
+        border-radius: 7px;
+        border: none;
+        width: 46vw;
+    }
+
+    #submitbtn {
+        /* background-color: #3F51B5; */
+        height: 2vh;
+        position: relative;
+        top: 6px;
+        width: 20vw;
+        color: lemonchiffon;
+        border-radius: 13px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 980px){
+    
+    .d-flex{
+        position: relative;
+        left: 5vw;
+    }
+    .input {
+        padding: 5px;
+        border-radius: 7px;
+        border: none;
+        width: 30vw;
+    }
+    
+    #submitbtn {
+        /* background-color: #3F51B5; */
+        background: none;
+        height: 2vh;
+        position: relative;
+        top: 6px;
+        width: 10vw;
+        color: lemonchiffon;
+        border-radius: 13px;
+    }
+
+    .footer{
+        position: relative;
+        left: 100px;
+    }
+    .clickImage img{
+        position: relative;
+        left: -109px;
+        width: 63vw;
+    }
+
+    .OfferSection{
+        width: 51vw;
+    }
+    .offCard h5,
+    .offCard p{
+        position: relative;
+        top: 20px;
+    }
+    .product{
+        width: 51vw;
+    }
+    .box{
+        position: relative;
+        top: 3rem;
+    }
+    .omeData{
+        width: 85vw;
+    }
+    .SearchName {
+        position: relative;
+        top: -0.7vh;
+    }
+    
+}
+
+@media screen  and (min-width: 980px) and (max-width: 1230px){
+
+    #submitbtn{
+        width: 6vw;
+    }
+}

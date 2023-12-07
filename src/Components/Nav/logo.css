@@ -1,0 +1,104 @@
+.nav-logo{
+    position:absolute;
+    top: 10px;
+    right:2vw;
+}
+.nav-logo ul{
+    display:inline-flex;
+    color:white;
+}
+.nav-logo ul li{
+    padding:10px;
+}
+.nav-logo ul button{
+    padding: 15px;
+    background: none;
+    border-style: none;
+    position:relative;
+    top:-5px;
+}
+#cart {
+    background: none;
+    border-style: none;
+    position:relative;
+    top:0.5vh;
+    left: 0px;
+    color:white;
+    font-size:20px;
+    z-index: 2;
+}
+.products{
+    color:red;
+}
+#searchbar{
+    height:20px;
+}
+#search{
+    position:relative;
+    left:10px;
+    font-size: 15px;
+}
+#profile{
+    color:white;
+    font-size:20px;
+    position:relative;
+    top:0.8vh;
+    cursor: pointer;
+}
+
+@media screen and (min-width:760px){
+    .profile-cart{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    #cart{
+        padding-left:80px;
+    }
+}
+
+
+@media screen  and (min-width: 700px) and (max-width: 1000px){
+    .searchbar{
+        position: relative;
+        top: 10px;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .nav-logo {
+        position: relative;
+        top: -60px;
+        left: 0;
+    }
+    
+    #cart{
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    top: -18px;
+    left: 83%;
+    }
+    #profile{
+        color:white;
+        position:absolute;
+        top:-32px;
+        right:70px;
+        font-size:25px;
+    }
+    .searchbar{
+        position: relative;
+        left: 0px;
+        top: 16px;
+        width: 55vw;
+        height: 25px;
+    }
+    #search{
+        position:relative;
+        font-size: 20px;
+        top:20px;
+        left:80px;
+    }
+}

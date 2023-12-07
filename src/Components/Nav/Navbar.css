@@ -1,0 +1,210 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.lgbtn
+{
+    color: blue;
+}
+nav{
+    position: relative;
+    right: 5.7vw;
+    width: 99.4vw;
+    height: 80px;
+    background-color: teal;
+}
+.logo{
+    color: gold;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 15px;
+    position: absolute;
+    top: 10px;
+    left: 1%;
+    z-index: 5;
+}
+nav ul{
+    float:right;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;   
+}
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 15px;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+}
+nav ul li .nav_link{
+    position:relative; 
+    align-content: center;
+    color:white;
+    font-size:18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav ul li .nav_link:hover{
+    color: red;
+}
+nav ul li div{
+    opacity:0;
+}
+nav ul li:hover div
+{
+    display:block;
+    position:absolute;
+    width: 200px;
+    background: aliceblue;
+    margin-top: 1px;
+    margin-left: -15px;
+    opacity:1;
+
+}
+nav ul li div ul{
+    display:none;
+}
+nav ul li:hover div ul {
+    display:block;
+    position:absolute;
+    z-index: 2;
+}
+nav ul li:hover div ul li{
+    display:block;
+    background-color: rgb(182, 247, 247);
+    width:180px;
+    position:relative;
+    left:-10px;
+}
+
+.menu-bar1{
+
+    display:none;
+}
+nav ul li :hover .menu-bar1{
+    display:block;
+    position:absolute;
+    background-color: aliceblue;
+}
+nav ul li :hover .menu-bar1 ul{
+    display:block;
+}
+
+.searchbar{
+    border-radius: 30px;
+    border: none;
+}
+#check
+{
+    display: none;
+}
+
+.list
+{
+    display: none;
+    font-weight: bold;
+}
+.drpdwn-link
+{
+    color:black;
+    margin-left:30px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        height:100px;
+       background-color: teal;
+    }
+    nav ul li .nav_link{
+        font-size: 17px;
+
+    }
+    .label{
+        display:flex;
+    }
+    label #btn{
+    color:white;
+    font-size: 30px;
+    float:left;
+    margin-top:40px;
+    margin-left: 20px;
+    line-height: 80px;
+    /* cursor:pointer; */
+    display:block
+    
+}
+label #cancel{
+    color:white;
+    font-size: 30px;
+    float:left;
+    margin-top:40px;
+    margin-left: 20px;
+    line-height: 80px;
+    display:none;
+
+}
+nav ul li:hover div {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background: aliceblue;
+    margin-top: 1px;
+    margin-left: -15px;
+}
+
+   nav ul{
+        position: absolute;
+        width:100%;
+        /* height: 100vh; */
+        background-color: blue; 
+        border-radius: 23px;
+        top:120px;
+        right: 96vw;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        z-index: 8;
+    }
+    nav ul li{
+        display:block;
+        margin:20px 0;
+        line-height: 30px;
+        position:relative;
+        left:-2%;
+
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #check:checked ~ .label label  #btn{
+        display:none;
+    }
+    #check:checked ~ .label label #cancel{
+        display:block;
+    }
+    nav ul li .nav_link{
+        align-content: center;
+        color:white;
+        font-size:18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+}
+
+
+

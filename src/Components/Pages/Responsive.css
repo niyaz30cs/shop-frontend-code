@@ -1,0 +1,110 @@
+
+@media screen and (min-width: 280px) and (max-width: 700px) {
+
+    nav {
+        width: 100vw;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 15vh;
+
+    }
+
+   
+
+    label #btn {
+        position: relative;
+        z-index: 6;
+    }
+
+    label #cancel {
+        position: relative;
+        z-index: 6;
+    }
+
+    
+
+    #cart {
+        position: relative;
+        left: 9px;
+        /* z-index: 5; */
+    }
+
+    .content {
+        width: 88vw;
+    }
+
+    .img {
+        width: 85vw;
+    }
+
+    .prev-slick-arrow {
+        position: relative;
+        left: 10px;
+    }
+
+    .next-slick-arrow {
+        position: absolute;
+        left: -65px;
+    }
+
+
+    .RomeBox {
+        width: 80vw;
+    }
+
+    .omeData {
+        width: 78vw;
+    }
+
+    .homeimg {
+        height: 21vh;
+        width: 50vw;
+    }
+
+    .homeText {
+        font-size: 1.6rem;
+    }
+
+    .addToCart {
+        width: 45vw;
+        padding: 5px;
+    }
+
+    .Hvid {
+        height: 50vh;
+    }
+
+    .Hvid img {
+        height: 40vh;
+    }
+
+    .Allfooter {
+        position: relative;
+        top: 20px;
+        /* right: -60px; */
+    }
+
+    .shiping-flexbox {
+        position: relative;
+        top: -80px;
+    }
+
+    .shiping-box {
+        margin: 10px 0px;
+    }
+
+    .pimg {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 414px) {
+    .homeimg {
+        height: 19vh;
+    }
+
+}
+
