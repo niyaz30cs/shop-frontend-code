@@ -11,7 +11,9 @@ function CategoryP(){
   const para = params.cat;
 
   useEffect(() => {
-    axios.get(`https://ecommerce-backend-code.onrender.com/products/fetchbycart/${para}`)
+    axios
+    .get(`https://project-backend-ct05.onrender.com/products/fetchbycart/${para}`)
+    // .get(`https://ecommerce-backend-code.onrender.com/products/fetchbycart/${para}`)
       .then((res) => {
         setData(res.data.result);
       });

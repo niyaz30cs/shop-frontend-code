@@ -11,13 +11,14 @@ import { Link } from "react-router-dom";
 function ProductCor() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("https://ecommerce-backend-code.onrender.com/products/fetchdata")
+    axios
+    .get("https://project-backend-ct05.onrender.com/products/fetchdata")
+
       .then((res) => {
         setData(res.data.result);
       });
   });
 
-  // const dispatch = useDispatch();
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -37,10 +38,6 @@ function ProductCor() {
       items: 1,
     },
   };
-
-  // const addToCart = (post) => {
-  //   dispatch(add(post));
-  // };
 
   return (
     <div className="ProCoursole">

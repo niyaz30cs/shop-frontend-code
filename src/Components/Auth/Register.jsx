@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./register.css"
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import Footer from "../Extra/Footer";
 import axios from "axios";
 
@@ -33,7 +34,8 @@ function Register(){
   };
 
   const RegisteringUser = async (clientData) => {
-    const url = "https://ecommerce-backend-code.onrender.com/userdata/register";
+    // const url = "https://localhost:1350/api/user/userdata/register";
+    const url = "https://project-backend-ct05.onrender.com/userdata/register";
     const response = await axios.post(url, clientData);
     setresponseData(response.data);
 
@@ -47,10 +49,12 @@ function Register(){
       localStorage.setItem("email", response.data.email);
       localStorage.setItem("number", response.data.phone);
       localStorage.setItem("userId", response.data.userId);
-
+      toast.info("Register SuccessFully", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
       navigate("/");
     } else {
-      window.alert("alrady registed")
+      window.alert("Already Registed")
       navigate("/login");
     }
   };

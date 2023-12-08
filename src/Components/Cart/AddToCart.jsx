@@ -12,7 +12,7 @@ function AddToCart({item}){
       dispatch(add(item));
       dispatch(getTotal());
     } else {
-      toast.info("Please login first to enjoy shopping", {
+      toast.info("Please login first to Enjoy Shopping", {
         position: toast.POSITION.TOP_RIGHT,
       });
     }

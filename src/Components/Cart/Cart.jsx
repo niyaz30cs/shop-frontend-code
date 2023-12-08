@@ -44,7 +44,8 @@ function Cart(){
   };
 
   const handleBuy = () => {
-    const url = "https://ecommerce-backend-code.onrender.com/order/addorder";
+    // const url = "https://ecommerce-backend-code.onrender.com/order/addorder";
+    const url = "https://project-backend-ct05.onrender.com/order/addorder";
     console.log("order placed");
 
     axios.post(url, cart);

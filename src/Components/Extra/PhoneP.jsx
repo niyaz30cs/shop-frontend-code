@@ -8,17 +8,23 @@ import Footer from "./Footer";
 function PhoneP(){
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("https://ecommerce-backend-code.onrender.com/products/fetchbysubcat/mob")
+    axios
+    // .get("https://localhost:1350/api/user/data")
+    .get("https://project-backend-ct05.onrender.com/products/fetchbysubcat/mob")
       .then((res) => {
-        setData(res.data.result);
+        setData(res.data.Result);
+        
       });
-  });
+      // console.log("result",res.data.Result);
+        // console.log("data",res.data);
+  },[]);
+  console.log(data);
 
   return (
     <div>
       <div className="oHome">
         <div className="omeData">
-          {data.slice(0, 5).map((item, index) => {
+          {data.map((item, index) => {
             return (
               <div key={index} className="RomeBox">
                 <img src={item.image} alt="not found" className="homeimg" />

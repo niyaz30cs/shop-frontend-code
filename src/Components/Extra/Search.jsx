@@ -8,7 +8,8 @@ function Search() {
     const num = params.cat
 
     useEffect(()=>{
-        const api = `https://ecommerce-backend-code.onrender.com/products/search/${para}`;
+        const api = `https://project-backend-ct05.onrender.com/products/search/${para}`;
+        // const api = `https://ecommerce-backend-code.onrender.com/products/search/${para}`;
         axios.get(api)
         .then((res) => setData(res.data))
         .catch((err) => console.log(err));

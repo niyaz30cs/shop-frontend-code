@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import Footer from "../Extra/Footer";
 import axios from "axios";
 
@@ -21,7 +22,8 @@ function Login(){
   };
 
   const loginUser = async (userData) => {
-    const api = "https://ecommerce-backend-code.onrender.com/userdata/login";
+    // const api = "https://localhost:1350/api/user/login";
+    const api = "https://project-backend-ct05.onrender.com/userdata/login";
     const response = await axios.post(api, userData);
     setResponseData(response.data);
 
@@ -31,7 +33,9 @@ function Login(){
       localStorage.setItem("loggedIn", true);
       localStorage.setItem("name", response.data.userData.name);
       localStorage.setItem("userId", response.data.userData._id);
-
+      toast.info("login SuccessFully", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
       navigate("/");
     } 
     else 

@@ -225,7 +225,20 @@
     top: 500px;
     color:red;
   }
- 
+ .clear-cart
+ {
+  background-color: black;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+  font-weight: bold;
+ }
+ .clear-cart:hover
+ {
+  background-color: green;
+  color: red;
+ }
 
 @media (max-width:600px) {
     .empty_cart_disp{

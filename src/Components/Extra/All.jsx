@@ -13,7 +13,8 @@ function All() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const api = `https://ecommerce-backend-code.onrender.com/products/fetchdata`;
+    // const api = `https://ecommerce-backend-code.onrender.com/products/fetchdata`;
+    const api = `https://project-backend-ct05.onrender.com/products/fetchdata`;
 
     axios.get(api).then((res) => setData(res.data.result))
          .catch((err) => console.log(err));

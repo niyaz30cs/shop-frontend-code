@@ -12,7 +12,8 @@ const SearchInp = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `https://ecommerce-backend-code.onrender.com/products/search/${values.title}`
+        `https://project-backend-ct05.onrender.com/products/search/${values.title}`
+        // `https://ecommerce-backend-code.onrender.com/products/search/${values.title}`
       );
       setValues({ ...values, results: data });
       navi("/search");

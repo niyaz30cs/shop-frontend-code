@@ -8,7 +8,9 @@ function LaptopP() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("https://ecommerce-backend-code.onrender.com/products/fetchbysubcat/lap")
+    axios
+    .get("https://project-backend-ct05.onrender.com/products/fetchbysubcat/lap")
+    // .get("https://ecommerce-backend-code.onrender.com/products/fetchbysubcat/lap")
       .then((res) => {
         setData(res.data.result);
       });

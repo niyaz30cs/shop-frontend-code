@@ -9,7 +9,8 @@ export default function PayPalApis() {
     // Order is created on the server and the order id is returned
     try {
       const { data } = await axios.post(
-        "https://ecommerce-backend-code.onrender.com/products/api/orders",
+        "https://project-backend-ct05.onrender.com/products/api/orders",
+        // "https://ecommerce-backend-code.onrender.com/products/api/orders",
         { cart: cartItems, userId: userId },
         {
           // method: "POST",

@@ -10,7 +10,8 @@ const StoreP = () => {
   // const [count, setCount] = useState(12);
 
   useEffect(() => {
-    axios.get("https://ecommerce-backend-code.onrender.com/products/fetchbysubcat/Acc")
+    axios
+    .get("https://project-backend-ct05.onrender.com/products/fetchbysubcat/Acc")
       .then((res) => {setData(res.data.result);});
   });
 
